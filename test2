@@ -1,0 +1,22 @@
+#ifndef TEST2.H
+#define TEST2.H
+
+#include <QWidget>
+
+class test2 : public QWidget
+{
+     Q_OBJECT
+public:
+    explicit test2(QWidget *parent = 0);
+
+    void mouseMoveEvent(QMouseEvent *ev);
+    int x;
+    int y;
+
+signals:
+    void Mouse_Pos();
+
+public slots:
+};
+
+#endif // TEST2.H
